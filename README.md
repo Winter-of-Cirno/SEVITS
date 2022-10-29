@@ -20,6 +20,12 @@ python SEVITS_train.py -c configs/config.json -m model_name
 ## Inference Example
 See this [demo](https://huggingface.co/spaces/Winter-of-Cirno/SEVITS) hosted on Huggingface ![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)
 
+## Reference
+| Module | Paper | Implementation |
+|-----|-------|----------------|
+| VITS |  [Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech](https://arxiv.org/pdf/2106.06103.pdf) | [jaywalnut310/vits](https://github.com/jaywalnut310/vits)
+| Speaker Encoder |  [Generalized End-To-End Loss for Speaker Verification](https://arxiv.org/pdf/1710.10467.pdf) |  [babysor/MockingBird](https://github.com/babysor/MockingBird)  |
+
 # VITS: Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech
 
 ### Jaehyeon Kim, Jungil Kong, and Juhee Son
