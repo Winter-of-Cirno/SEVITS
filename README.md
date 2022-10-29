@@ -1,3 +1,25 @@
+# SEVITS : VITS with speaker encoder
+SEVITS allows training a multi-speaker model without speaker IDs. The advantages are as follows:
+- No speaker labels are needed
+- The model can be fine-tuned on a new speaker directly, without overwriting the existing speaker
+
+## Pre-requisites
+See the original VITS repo README (below)
+
+## Filelist Format
+Since no speaker labels are required, SEVITS uses a single-speaker filelist format:
+```sh
+audio_path | autio_text
+``` 
+See example filelists ``` filelists/snll_all_single_train.txt ``` and ``` filelists/snll_all_single_val.txt ```
+
+## Training Exmaple
+```sh
+python SEVITS_train.py -c configs/config.json -m model_name
+```
+## Inference Example
+See this [demo](https://huggingface.co/spaces/Winter-of-Cirno/SEVITS) hosted on Huggingface ![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)
+
 # VITS: Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech
 
 ### Jaehyeon Kim, Jungil Kong, and Juhee Son
